@@ -1,0 +1,63 @@
+
+.busquedaAlojam{
+    border-radius: 5px; 
+    border:1px ridge rgba(0, 0, 0, 0.175);
+}
+
+.pie{
+    text-align: center;
+    color: rgb(20, 145, 20);
+    font-size: 12px;
+    height: 40px;
+    vertical-align: middle;
+    background-color:rgba(23, 179, 23, 0.180);
+    vertical-align: middle;
+    height: 40px;
+}
+
+.menuLateral{
+    background: rgba(23, 179, 23, 0.180);
+    font-size: small;
+    padding: 20px;
+    border-radius: 5px; 
+}
+
+.formContacto{
+    background: rgba(23, 179, 23, 0.180); 
+    font-size: small;
+    padding: 20px;
+    border-radius: 5px; 
+    align-content: center;
+
+}
+.menuSuperior{
+    color: rgb(20, 145, 20);
+    background: rgba(23, 179, 23, 0.180);
+    font-size: small;
+    padding: 5px;
+    border-radius: 1px; 
+    
+}
+
+#tablaMenuSup{
+   width: 100%;
+   height: auto;
+   text-shadow: 1px;
+   font-variant: small-caps;
+  
+}
+
+.resultadosBusqueda{
+    text-align: right;
+}
+
+#enlaces{
+    text-decoration: none;
+    color: rgb(20, 145, 20);
+}
+#titulo{
+    font-variant: small-caps;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold ;
+    background-color:rgba(23, 179, 23, 0.180);
+}
