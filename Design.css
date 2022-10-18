@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Boton +Info*/
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 10px grey;
+    color: black;
+    background-color: white;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+/*Header*/
+
+
+.conteiner {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    top: 0px;
+    background-color: rgb(132, 190, 132);
+    color: rgb(33, 105, 33);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(33, 105, 33);
+    font-size: 1.6em;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: rgb(33, 105, 33);
+}
+
+
+.logo {
+    transition: all 50ms;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+header .conteiner {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header nav a {
+    padding: 5px 12px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.Redes {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+
+#WSP:hover {
+    transform: scale(1.20);
+}
+
+#IG:hover {
+    transform: scale(1.20);
+}
+
+#FB:hover {
+    transform: scale(1.20);
+}
+
+header a:hover {
+    color: rgb(33, 105, 33);
+    transform: scale(1.20);
+}
+
+
+
+/*Hero*/
+
+#hero {
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(images/Casa1.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+
+
+/*Parrafo de info*/
+
+#Carrusel {
+    color: black;
+    text-align: center;
+    padding: 20px 12px;
+}
+
+
+/*Cartas*/
+
+#alojamientos {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#alojamientos .conteiner {
+    padding: 150px, 12px;
+}
+
+
+#alojamientos p {
+    display: none;
+}
+
+.carta {
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+
+
+.carta:first-child {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(images/Casa2.jpg);
+    transition: all 150ms;
+}
+
+.carta.carta:nth-child(2) {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(images/Casa3.jpg);
+    transition: all 150ms;
+}
+
+.carta.carta:nth-child(3) {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(images/Casa4.jpg);
+    transition: all 150ms;
+}
+
+
+
+
+.carta:first-child:hover {
+    box-shadow: 5px 5px 0px 0px #cccccc, 10px 10px #838383;
+    transform: translate(-5px, -5px);
+}
+
+.carta.carta:nth-child(2):hover {
+    box-shadow: 5px 5px 0px 0px #cccccc, 10px 10px #838383;
+    transform: translate(-5px, -5px);
+}
+
+.carta.carta:nth-child(3):hover {
+    box-shadow: 5px 5px 0px 0px #cccccc, 10px 10px #838383;
+    transform: translate(-5px, -5px);
+}
+
+
+/*Footer*/
+
+
+footer #conteiner {
+    color: black;
+    padding: 1em;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*Pagina Alianzas*/
+/*FlexBox*/
+.ConteinerAli {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 1em 1em 0 0;
+    align-items: center center;
+    justify-content: center;
+}
+
+.CartaAli {
+    margin: 1ex 1ex 1ex 1ex;
+    width: 330px;
+    height: 430px;
+    border: solid rgb(132, 190, 132);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    align-items: center;
+    justify-content: center;
+}
+
+.CartaAli:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
+}
+
+.CartaAli img {
+    width: 330px;
+    height: 220px;
+}
+
+.CartaAli h4 {
+    font-weight: 600;
+}
+
+.CartaAli p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+
+
+@media only screen and (min-width:720px) {
+
+
+
+    header {
+        top: 0px;
+        width: 100%;
+    }
+
+    header .conteiner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #alojamientos .conteiner {
+        justify-content: center;
+    }
+
+}
+
+@media (min-width:1000px) {
+
+    #hero h1 {
+        font-size: 7em;
+    }
+
+    #alojamientos .conteiner {
+        justify-content: center;
+        display: flex;
+
+    }
+
+    #alojamientos p {
+        display: block;
+    }
+
+    #alojamientos .carta {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 0;
+        padding: 0;
+    }
+
+    button:hover {
+        background-color: grey;
+    }
+
+}
