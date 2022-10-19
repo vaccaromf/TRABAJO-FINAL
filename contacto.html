@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alojamiento Rural</title>
     <link rel="stylesheet" href="Design.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1703/1703523.png" type="image/png" />
+
 </head>
 
 <body>
@@ -35,16 +37,28 @@
             </nav>
 
         </div>
+    
+        <script>
+          function verificarEmail (valor){
+            re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+            if(!re.exec(valor)){
+                alert('Debe ingresar una dirección de correo válida.');
+            }
+            else alert('El correo ingresado es válido.');
+            }
+        </script>
+    
+    
     </header>
 
     <main>
-        <form action="">
+        <form action="" method="post">
             <h3>Deja tus datos y nos comunicaremos en la brevedad</h3>
             <input type="text" name="Nombre" placeholder="Nombre">
             <input type="text" name="Telefono" placeholder="Telefono">
             <input type="text" name="Correo" placeholder="Correo">
             <textarea name="Mensaje" placeholder="Breve motivo de contacto"></textarea>
-            <input type="button" value="Enviar" id="boton">
+            <input type="button" value="Enviar" id="boton"  onClick="verificarEmail(Correo.value);">
         </form>
 
         <style>
