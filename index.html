@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Design.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1703/1703523.png" type="image/png" />
 
+    
 </head>
 
 <body>   
@@ -99,9 +100,16 @@
 
     <footer>
         <section id="conteiner">
-
             <p> &copy; Codo a Codo - Grupo2 - 22528 <br> Vaccaro Fernanda, Bonaduce Nicolas, Rodrigo Paz</p>
         </section>
+        <script>
+           
+           
+           fetch('http://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires')
+            .then(response => response.json())
+            .then(info => console.log(info))
+           
+        </script>
     </footer>
 
 

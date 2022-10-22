@@ -39,12 +39,16 @@
         </div>
     
         <script>
-          function verificarEmail (valor){
+          function verificarEmail (mail){
+            console.log(mail)
+            
             re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
-            if(!re.exec(valor)){
+          
+            if(!re.exec(mail)){
                 alert('Debe ingresar una dirección de correo válida.');
-            }
-            else alert('El correo ingresado es válido.');
+                return false;
+            }           
+           else return true;
             }
         </script>
     
@@ -52,13 +56,13 @@
     </header>
 
     <main>
-        <form action="" method="post">
+        <form action="mailto:alojamientorural@gmail.com?subject=Tarifas" method="post" onsubmit="return verificarEmail(Correo.value)" enctype ="text/plain" >
             <h3>Deja tus datos y nos comunicaremos en la brevedad</h3>
             <input type="text" name="Nombre" placeholder="Nombre">
             <input type="text" name="Telefono" placeholder="Telefono">
             <input type="text" name="Correo" placeholder="Correo">
             <textarea name="Mensaje" placeholder="Breve motivo de contacto"></textarea>
-            <input type="button" value="Enviar" id="boton"  onClick="verificarEmail(Correo.value);">
+            <input type="submit" value="Enviar" id="boton">
         </form>
 
         <style>
